@@ -1,8 +1,11 @@
+import Navbar from '@/sections/Navbar'
 import React from 'react'
 
 function Index() {
   return (
-    <div>index</div>
+    <div className='app'>
+      <Navbar/>
+    </div>
   )
 }
 
