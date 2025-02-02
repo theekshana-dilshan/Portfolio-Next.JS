@@ -1,3 +1,4 @@
+import Button from '@/components/Button'
 import Logo from '@/components/logo'
 import Link from 'next/link'
 import React from 'react'
@@ -21,13 +22,16 @@ function Navbar() {
             <div className="nav-items">
               <ul className="nav-items-list">
                 {sectionLinks.map(({name, link}) => (
-                  <li key={name} className="nav-items-list-items">
-                    <Link href={link} className='nav-items-list-items-link'>
+                  <li key={name} className="nav-items-list-item">
+                    <Link href={link} className='nav-items-list-item-link'>
                       {name}
                     </Link>
                   </li>
                 ))}
               </ul>
+              <div className="nav-items-button">
+                <Button text="Resume" link="http://localhost:3000/resume.pdf"/>
+              </div>
             </div>
         </div>
     </nav>
