@@ -8,9 +8,11 @@ function Index() {
   return (
     <div className='app'>
       <Navbar/>
-      <Hero/>
       <SocialIcons/>
       <Email/>
+      <main>
+        <Hero/>
+      </main>
     </div>
   )
 }
