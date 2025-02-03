@@ -1,6 +1,7 @@
 @use "variables";
 @use "globles"; 
 
+@import "components/email";
 @import "components/index.scss";
 @import "sections/index.scss";
-@import "components/socialIcons.scss"
+@import "components/socialIcons.scss";

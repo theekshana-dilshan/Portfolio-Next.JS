@@ -30,6 +30,9 @@
             &:hover{
                 transform: translateY(-4px);
             }
+            &:last-child{
+                margin-bottom: 2rem;
+            }
         }
         &::after{
             content: "";
