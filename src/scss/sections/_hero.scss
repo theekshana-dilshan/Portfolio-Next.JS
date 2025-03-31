@@ -39,4 +39,10 @@
             font-family: var(--raleway);
         }
     }
+
+    @media screen and (max-width: 768px) {
+        &-text {
+            width: 90%;
+        }
+    }
 }

@@ -1,26 +1,68 @@
 import Button from '@/components/Button'
 import Link from 'next/link'
 import React from 'react'
+import { motion } from "framer-motion";
 
 function Hero() {
   return (
     <div className='hero'>
-        <h1 className="hero-title">Hi my name is</h1>
-        <h2 className="hero-title-large">Theekshana Dilshan</h2>
-        <h3 className="hero-title-sub">
-            I craft things for web.
-        </h3>
-        <p className="hero-text">
-            I&apos;m a software engineer with expertise in creating top-notch digital
-            experiences. My current focus is on developing products that are
-            accessible and centerd around user needs, as part of the team at&nbsp;
-            <Link href="https://www.ijse.lk/" target='_blank' className='link'>
-                IT Solutions
-            </Link>
-        </p>
-        <div className="hero-button">
+        <motion.h1
+            className="hero-title"
+            initial={{ opacity: 0, y: 5 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+                duration: 0.3,
+                ease: "easeInOut",
+                delay: 0.6,
+            }}
+        >Hi my name is</motion.h1>
+        <motion.h2
+            className="hero-title-large"
+            initial={{ opacity: 0, y: 5 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+                duration: 0.3,
+                ease: "easeInOut",
+                delay: 0.75,
+            }}
+        >Theekshana Dilshan</motion.h2>
+        <motion.h3
+            className="hero-title-large hero-title-sub"
+            initial={{ opacity: 0, y: 5 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+                duration: 0.3,
+                ease: "easeInOut",
+                delay: 1.05,
+            }}
+        >
+            Software Engineer Student.
+        </motion.h3>
+        <motion.p
+            className="hero-text"
+            initial={{ opacity: 0, y: 5 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+                duration: 0.3,
+                ease: "easeInOut",
+                delay: 1.35,
+            }}
+        >
+            I am a passionate and driven software engineering student with a strong interest in exploring the vast realms of technology and innovation. 
+            As a proactive learner and dedicated team player, I am committed to driving technological advancements and consistently striving for excellence in every endeavor.
+        </motion.p>
+        <motion.div
+            className="hero-button"
+            initial={{ opacity: 0, y: 5 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+                duration: 0.3,
+                ease: "easeInOut",
+                delay: 1.65,
+            }}
+        >
             <Button text="Check out my projects" link="https://github.com/theekshana-dilshan"/>
-        </div>
+        </motion.div>
     </div>
   )
 }

@@ -17,7 +17,7 @@ function SocialIcons() {
         {
             name: "LinkedIn", 
             icon: <FiLinkedin/>, 
-            link: "https://github.com/theekshana-dilshan",
+            link: "https://www.linkedin.com/in/theekshana-dilshan-8496b2298/",
         },
         {
             name: "Instagram", 
