@@ -20,12 +20,21 @@ function Navbar() {
   ];
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
-      window.pageYOffset > 100
-        ? setNavbarVisible(true)
-        : setNavbarVisible(false);
-    });
+    const handleScroll = () => {
+      if (window.pageYOffset > 100) {
+        setNavbarVisible(true);
+      } else {
+        setNavbarVisible(false);
+      }
+    };
+  
+    window.addEventListener("scroll", handleScroll);
+  
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
+  
 
   useEffect(() => {
     const links = document.querySelectorAll(".nav-items-list-item-link");
@@ -37,7 +46,7 @@ function Navbar() {
       e.stopPropagation();
     });
     const html = document.querySelector("html");
-    html?.addEventListener("click", (e) => {
+    html?.addEventListener("click", () => {
       setResponsiveNavVisible(false);
     });
   }, []);
