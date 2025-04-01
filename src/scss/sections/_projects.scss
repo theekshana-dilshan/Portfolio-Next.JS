@@ -8,6 +8,7 @@
         margin-bottom: 2rem;
         font-size: var(--tx2large);
         font-weight: 700;
+      }
         &::before {
           counter-increment: title;
           content: "0" counter(title) ".";
@@ -24,12 +25,11 @@
         //   margin-left: 420px;
         //   background-color: var(--lightest-navy);
         // }
-      }
     }
     &-container {
       display: flex;
       flex-direction: column;
-      gap: 5rem;
+      gap: 7rem;
       .project {
         position: relative;
         display: flex;

@@ -7,7 +7,7 @@ import {FiGithub, FiExternalLink} from "react-icons/fi"
 function Projects() {
     const projectsData = [
         {
-            image: "/CropMonitoring.png",
+            image: "/CropMonitoring1.png",
             projectName: "Crop Monitoring System",
             projectLink: "https://github.com/theekshana-dilshan/Crop-Monitoring-System-React.git",
             projectDescription: "A React-based application use to manage crop efficiently.",
@@ -41,7 +41,7 @@ function Projects() {
             },
         },
         {
-            image: "/BlogApp.png",
+            image: "/BlogApp1.png",
             projectName: "BlogApp FrontEnd",
             projectLink: "https://github.com/theekshana-dilshan/Blog-App-FrontEnd-NextJS.git",
             projectDescription: "A Next.js based application that admin manage blog posts, user authentication, comment system.",
@@ -71,6 +71,22 @@ function Projects() {
             projectExternalLinks: {
                 github: "https://github.com/theekshana-dilshan/Food-Recipe-App.git",
                 externalLink: "https://github.com/theekshana-dilshan/Food-Recipe-App.git",
+            },
+        },
+        {
+            image: "/tripPlanner.png",
+            projectName: "AI Travel Planner",
+            projectLink: "https://github.com/theekshana-dilshan/AI-travel-planner-frontend.git",
+            projectDescription: "A React based application that plan a trip with Gemini AI.",
+            projectTech: [
+                "React",
+                "TailwindCSS",
+                "GeminiAI",
+                "FireBase",
+            ],
+            projectExternalLinks: {
+                github: "https://github.com/theekshana-dilshan/AI-travel-planner-frontend.git",
+                externalLink: "https://github.com/theekshana-dilshan/AI-travel-planner-frontend.git",
             },
         },
     ];
