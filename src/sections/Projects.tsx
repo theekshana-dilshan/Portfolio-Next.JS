@@ -89,6 +89,25 @@ function Projects() {
                 externalLink: "https://github.com/theekshana-dilshan/AI-travel-planner-frontend.git",
             },
         },
+        {
+            image: "/Sarisara.png",
+            projectName: "Serisara Shopflow",
+            projectLink: "https://github.com/theekshana-dilshan/sarisara-shopflow.git",
+            projectDescription: "A React based application that manage sellular shop sales, inventry, customers.",
+            projectTech: [
+                "React",
+                "TailWind CSS",
+                "Node.js",
+                "Typescript",
+                "JWT",
+                "MongoDB",
+                "Prisma",
+            ],
+            projectExternalLinks: {
+                github: "https://github.com/theekshana-dilshan/sarisara-shopflow.git",
+                externalLink: "https://github.com/theekshana-dilshan/sarisara-shopflow.git",
+            },
+        },
     ];
 
     return (
