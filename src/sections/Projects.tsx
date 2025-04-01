@@ -105,7 +105,7 @@ function Projects() {
             ],
             projectExternalLinks: {
                 github: "https://github.com/theekshana-dilshan/sarisara-shopflow.git",
-                externalLink: "https://github.com/theekshana-dilshan/sarisara-shopflow.git",
+                externalLink: "https://sarisara-shopflow.vercel.app/",
             },
         },
     ];
